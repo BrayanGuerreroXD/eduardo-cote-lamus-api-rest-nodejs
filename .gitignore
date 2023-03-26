@@ -1,2 +1,3 @@
 #Local variables
 .env
+.config.js
