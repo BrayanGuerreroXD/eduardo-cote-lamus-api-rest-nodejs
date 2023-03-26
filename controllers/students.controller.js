@@ -16,7 +16,7 @@ export const getStudents = async (req, res) => {
 export const getStudent = async (req, res) => {
   try {
     const [rows] = await pool.query("SELECT * FROM Student WHERE code =?", [
-      req.params.id,
+      req.params.code,
     ]);
 
     if (rows.length <= 0) {
