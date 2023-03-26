@@ -103,7 +103,7 @@ export const updateRegister = async (req, res) => {
 };
 
 // Delete Register from DB
-export const deleteStudent = async (req, res) => {
+export const deleteRegister = async (req, res) => {
   try {
     const [result] = await pool.query("DELETE FROM Register WHERE id = ?", [
       req.params.id,
